@@ -33,12 +33,15 @@ public class Ejemplo051 {
                 + "materia");
         
         while (contador <= limite){
-            System.out.printf("Ingrese calificación número %d\n", contador);
+            System.out.printf("Ingrese calificación número %d\n", 
+                    contador);
             calificacion = entrada.nextDouble();
             suma_total = suma_total + calificacion;
             // contador
             contador = contador + 1;
-            cadena = cadena + "Calificacion ingresada: " + calificacion + "\n";
+            cadena = String.format("%s Calificacion ingresada: %.2f\n", 
+                    cadena, calificacion);
+      
         }
         
         promedio_final = suma_total/limite;
