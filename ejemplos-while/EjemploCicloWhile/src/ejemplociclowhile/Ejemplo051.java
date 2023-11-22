@@ -39,14 +39,14 @@ public class Ejemplo051 {
             suma_total = suma_total + calificacion;
             // contador
             contador = contador + 1;
-            cadena = String.format("%s Calificacion ingresada: %.2f\n", 
+            cadena = String.format("%s Calificacion ingresada: %.1f\n", 
                     cadena, calificacion);
       
         }
         
         promedio_final = suma_total/limite;
-        System.out.printf("%s", cadena);
-        System.out.printf("El promedio final es %f\n", promedio_final);
+        System.out.printf("%s\n El promedio final es %.2f\n", 
+                cadena, promedio_final);
         
     }
 }
