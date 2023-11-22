@@ -25,7 +25,10 @@ public class Ejemplo03 {
         int contador = 1;
         int suma = 0;
         int valor_ingresado;
-        
+        // En el siguiente pseudocodigo nos permite el ingreso de 5 numeros
+        // por medio de una variable acumuladora se sumaran todos los numeros 
+        // cuando el contador sea mayor al limite no se ingresaran mas datos
+        // y al final imprimira todos los numeros sumados ingresados
         while (contador <= limite) { 
             System.out.println("Ingrese el valor a sumar");
             valor_ingresado = entrada.nextInt();
